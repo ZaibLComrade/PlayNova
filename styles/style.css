@@ -1,1 +1,39 @@
-styles
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation Bar Styles */
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 45px 120px;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo-and-name-container {
+	display: flex;
+	align-items: center;
+}
+
+.nav-container > ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.menu-icons {
+	padding: 16px;
+	background: rgba(11, 2, 35, 0.10);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.icons {
+	display: flex;
+	gap: 16px;
+}
