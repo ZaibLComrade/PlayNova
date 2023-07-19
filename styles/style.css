@@ -1,39 +1,90 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+}
+
+/* Shared Styles */
+:root {
+
 }
 
 /* Navigation Bar Styles */
-.nav-container {
+.nav-container, .logo-and-name-container, .menu, .menu-icons, .icons {
 	display: flex;
 	align-items: center;
+}
+
+.nav-container {
 	justify-content: space-between;
 	padding: 45px 120px;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .logo-and-name-container {
-	display: flex;
-	align-items: center;
+	gap: 20px;
 }
 
-.nav-container > ul {
+.name {
+	font-weight: 700;
+	color: #0B0223;
+	font-size: 45px;
+}
+
+.letter {
+	color: #FF42A5;
+}
+
+.menu {
 	list-style-type: none;
-	display: flex;
-	align-items: center;
 	gap: 32px;
+	color: #3C354F;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .menu-icons {
 	padding: 16px;
 	background: rgba(11, 2, 35, 0.10);
 	border-radius: 8px;
-	display: flex;
-	align-items: center;
 	gap: 24px;
 }
 
 .icons {
-	display: flex;
 	gap: 16px;
+}
+
+/* Responsive styles for medium devices */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+	.nav-container {
+		padding: 20px 0px;
+		flex-direction: column;
+		gap: 20px;
+	}	
+
+	.menu {
+		font-size: 16px;
+		width: 99%;
+		gap: 10%;
+		justify-content: center;
+	}
+}
+
+/* Responsive styles for small devices */
+@media screen and (max-width: 576px) {
+	.nav-container {
+		flex-direction: column;
+		gap: 62px;
+		box-shadow: none;
+	}
+
+	.menu {
+		flex-direction: column;
+		gap: 36px;
+	}
+
+	.menu-icons {
+		margin-top: calc(62px - 36px);
+	}
 }
