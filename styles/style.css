@@ -278,6 +278,7 @@
 .category-container {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 161px;
 }
 
 .buttons {
@@ -312,7 +313,63 @@
 	font-weight: 600;
 }
 
+/* Footer Style */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #0B0223;
+	color: white;
+	padding: 140px;
+}
 
+footer .name {
+	color: white;
+}
+
+.links-container {
+	margin-top: 36px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 35px;
+	column-gap: 70px;
+}
+
+.links-container > p {
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.social-logo-container {
+	display: flex;
+	gap: 50px;
+	margin-top: 80px;
+}
+
+.site-essential-container {
+	margin-top: 70px;
+	margin-bottom: 78px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+
+.site-essential-container > p {
+	color: rgba(255, 255, 255, 0.60);
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.copyright-container {
+	color: rgba(255, 255, 255, 0.60);
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	width: 258px;
+}
 
 /* Responsive styles for medium devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
@@ -330,9 +387,6 @@
 	}
 
 	/* Play Instantly Section */
-	.play-instantly-image-container {
-		/* width: 50%; */
-	}
 }
 
 /* Responsive styles for small devices */
